@@ -1,4 +1,3 @@
-# archanazmailz-ai.github.io
 Professional Data Analytics Portfolio
 # Hi, I'm Archana Mohan 👋
 
