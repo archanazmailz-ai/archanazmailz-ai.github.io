@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Archana Mohan | Data Analyst Portfolio</title>
 
     <style>
@@ -14,38 +15,41 @@
 
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: #333;
-            background: #f7f9fc;
+            background: #f6f8fb;
         }
 
         header {
             background: #1f3c5b;
             color: white;
             text-align: center;
-            padding: 70px 20px;
+            padding: 80px 20px;
         }
 
         header h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
+            font-size: 44px;
+            margin-bottom: 12px;
         }
 
         header p {
-            font-size: 20px;
+            font-size: 21px;
         }
 
         nav {
             background: white;
             text-align: center;
-            padding: 15px;
+            padding: 16px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         nav a {
             color: #1f3c5b;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 16px;
             font-weight: bold;
         }
 
@@ -56,35 +60,56 @@
         .container {
             max-width: 1000px;
             margin: auto;
-            padding: 50px 20px;
+            padding: 55px 20px;
         }
 
         section {
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
 
         h2 {
             color: #1f3c5b;
-            margin-bottom: 20px;
-            font-size: 28px;
+            font-size: 29px;
+            margin-bottom: 22px;
         }
 
         .intro {
             font-size: 18px;
         }
 
+        .highlight {
+            background: white;
+            padding: 25px;
+            margin-top: 25px;
+            border-left: 5px solid #1f3c5b;
+            border-radius: 6px;
+        }
+
+        .skill-group {
+            background: white;
+            padding: 25px;
+            margin-bottom: 18px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        .skill-group h3 {
+            color: #1f3c5b;
+            margin-bottom: 12px;
+        }
+
         .skills {
             display: flex;
             flex-wrap: wrap;
-            gap: 12px;
+            gap: 10px;
         }
 
         .skill {
-            background: white;
-            padding: 10px 18px;
-            border-radius: 20px;
-            border: 1px solid #d9e2ec;
+            background: #eef3f8;
+            padding: 8px 15px;
+            border-radius: 18px;
             font-weight: bold;
+            font-size: 14px;
         }
 
         .project {
@@ -96,11 +121,16 @@
 
         .project h3 {
             color: #1f3c5b;
+            font-size: 22px;
             margin-bottom: 12px;
         }
 
         .project p {
-            margin-bottom: 20px;
+            margin-bottom: 18px;
+        }
+
+        .project ul {
+            margin: 15px 0 25px 20px;
         }
 
         .button {
@@ -117,11 +147,40 @@
             background: #162d44;
         }
 
+        .future-projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .future-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        .future-card h3 {
+            color: #1f3c5b;
+            margin-bottom: 8px;
+        }
+
+        .education {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        .education p {
+            margin-bottom: 12px;
+        }
+
         footer {
             background: #1f3c5b;
             color: white;
             text-align: center;
-            padding: 25px;
+            padding: 30px 20px;
         }
 
         footer a {
@@ -130,9 +189,10 @@
             margin: 0 10px;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 650px) {
+
             header h1 {
-                font-size: 32px;
+                font-size: 34px;
             }
 
             header p {
@@ -142,101 +202,188 @@
             nav a {
                 margin: 0 7px;
             }
+
+            .future-projects {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Archana Mohan</h1>
-        <p>Data Analyst | Power BI | SQL | Python | Excel</p>
-    </header>
+<header>
+    <h1>Archana Mohan</h1>
+    <p>Data Analyst | Power BI | SQL | Python | Excel</p>
+</header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <main class="container">
+<main class="container">
 
-        <section id="about">
-            <h2>About Me</h2>
+    <section id="about">
+        <h2>About Me</h2>
 
-            <p class="intro">
-                I am a Data Analytics professional transitioning from a Software Development
-                background into Data Analytics. I have completed a Diploma in Data Analytics
-                and am building practical projects focused on data analysis, visualization,
-                reporting, and business insights.
-            </p>
-        </section>
+        <p class="intro">
+            I am a Data Analytics professional transitioning from a Software Development
+            background into Data Analytics. I have completed a Diploma in Data Analytics
+            and am building practical projects focused on transforming data into meaningful
+            business insights.
+        </p>
 
-        <section id="skills">
-            <h2>Skills</h2>
+        <div class="highlight">
+            <strong>My focus:</strong> Data Analysis, Business Intelligence,
+            Data Visualization, KPI Analysis, and Data-driven Decision Making.
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+
+        <div class="skill-group">
+            <h3>Data Analysis</h3>
 
             <div class="skills">
                 <span class="skill">SQL</span>
-                <span class="skill">Power BI</span>
                 <span class="skill">Python</span>
                 <span class="skill">Excel</span>
-                <span class="skill">Tableau</span>
                 <span class="skill">Statistics</span>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <h3>Business Intelligence & Visualization</h3>
+
+            <div class="skills">
+                <span class="skill">Power BI</span>
+                <span class="skill">Tableau</span>
                 <span class="skill">Data Visualization</span>
-                <span class="skill">Data Cleaning</span>
                 <span class="skill">KPI Analysis</span>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <h3>Analytics</h3>
+
+            <div class="skills">
+                <span class="skill">Data Cleaning</span>
+                <span class="skill">Exploratory Data Analysis</span>
                 <span class="skill">Business Insights</span>
+                <span class="skill">Prompt Engineering</span>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projects">
-            <h2>Featured Project</h2>
 
-            <div class="project">
-                <h3>Customer Support Ticket &amp; Service Quality Analytics</h3>
+    <section id="projects">
+        <h2>Featured Project</h2>
 
-                <p>
-                    A Power BI project analyzing customer support ticket data to evaluate
-                    service quality, SLA performance, resolution efficiency, customer
-                    satisfaction, and agent performance.
-                </p>
+        <div class="project">
 
-                <a class="button"
-                   href="https://github.com/archanazmailz-ai/customer-support-service-quality-analytics"
-                   target="_blank">
-                    View Project
-                </a>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Connect With Me</h2>
+            <h3>Customer Support Ticket &amp; Service Quality Analytics</h3>
 
             <p>
-                Interested in connecting or discussing Data Analytics opportunities?
+                A Power BI project analyzing customer support operations to evaluate
+                ticket trends, SLA compliance, resolution efficiency, customer
+                satisfaction, and agent performance.
             </p>
 
-            <br>
+            <ul>
+                <li>Analyzed 2,330 customer support tickets</li>
+                <li>Evaluated First Response and Resolution SLA performance</li>
+                <li>Analyzed customer satisfaction and support efficiency</li>
+                <li>Built interactive Power BI dashboards for operational insights</li>
+            </ul>
 
             <a class="button"
-               href="https://www.linkedin.com/in/archana-mohan-150309204/"
+               href="https://github.com/archanazmailz-ai/customer-support-service-quality-analytics"
                target="_blank">
-                LinkedIn
+                View Project
             </a>
 
-            <a class="button"
-               href="https://github.com/archanazmailz-ai"
-               target="_blank">
-                GitHub
-            </a>
-        </section>
+        </div>
+    </section>
 
-    </main>
 
-    <footer>
-        <p>© 2026 Archana Mohan | Data Analytics Portfolio</p>
-    </footer>
+    <section>
+        <h2>More Projects</h2>
+
+        <div class="future-projects">
+
+            <div class="future-card">
+                <h3>Cloud Service Usage &amp; Cost Analytics</h3>
+                <p>
+                    Data Analytics project focused on cloud usage patterns,
+                    cost analysis, and business insights.
+                </p>
+            </div>
+
+            <div class="future-card">
+                <h3>Amazon Product Category Analysis</h3>
+                <p>
+                    Python-based analysis exploring product categories,
+                    revenue patterns, and category performance.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="education">
+
+            <p>
+                <strong>Diploma in Data Analytics</strong>
+            </p>
+
+            <p>
+                <strong>B.Tech – Computer Science &amp; Engineering</strong>
+            </p>
+
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Let's Connect</h2>
+
+        <p>
+            I am currently building my Data Analytics portfolio and exploring
+            opportunities in Data Analytics and Business Intelligence.
+        </p>
+
+        <br>
+
+        <a class="button"
+           href="https://www.linkedin.com/in/archana-mohan-150309204/"
+           target="_blank">
+            LinkedIn
+        </a>
+
+        <a class="button"
+           href="https://github.com/archanazmailz-ai"
+           target="_blank">
+            GitHub
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Archana Mohan | Data Analytics Portfolio</p>
+</footer>
 
 </body>
 </html>
