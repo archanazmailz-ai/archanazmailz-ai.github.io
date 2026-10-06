@@ -24,7 +24,8 @@ Power BI project focused on analyzing customer support operations, SLA complianc
 
 ### 🎓 Education
 
-**Diploma in Data Analytics**
+**Diploma in Data Analytics** 
+
 **B.Tech – Computer Science & Engineering**
 
 ### 📌 Currently Building
