@@ -20,7 +20,7 @@ I have completed a **Diploma in Data Analytics** and am building practical proje
 
 Power BI project focused on analyzing customer support operations, SLA compliance, service quality, ticket trends, and agent performance.
 
-[View Project →](../customer-support-service-quality-analytics)
+[View Project →](https://github.com/archanazmailz-ai/customer-support-ticket-service-quality-analytics)
 
 ### 🎓 Education
 
